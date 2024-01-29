@@ -3,7 +3,8 @@ import './index.css'
 
 class Clock extends Component {
   state = {date: new Date()} 
-  //or this method use constructor(props){
+  //or [OLD METHOD]
+  this method use constructor(props){
   super(props)
   this.state ={date: new Date()}
 } //
