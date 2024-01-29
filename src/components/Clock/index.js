@@ -2,7 +2,12 @@ import {Component} from 'react'
 import './index.css'
 
 class Clock extends Component {
-  state = {date: new Date()}
+  state = {date: new Date()} 
+  //or this method use constructor(props){
+  super(props)
+  this.state ={date: new Date()}
+} //
+  
 
   componentDidMount() {
     console.log('componentDidMount() called')
